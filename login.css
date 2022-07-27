@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+section{
+    padding: 40px 15%;
+}
+
+.emperor{
+    height: 100%;
+    width: 100%; 
+    background-image: url(../high\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    color: black;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{    
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: 4s;
+}
+.button{
+    background-color: #f9004d;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 20px;
+    transition: transform .4s;
+    text-align: right;
+}
+.button:hover{
+    transform: scale(1.2)
+}
+
+.login{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem; 
+}
+.login-form h2{
+    font-size: 50px;
+    color: #191919;
+    margin-bottom: 20px;
+}
+.login-form form{
+    position: relative;
+}
+.login-form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.end{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

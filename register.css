@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans',sans-serif;
+    box-sizing: border-box;
+}
+.emperor{
+    height: 100vh;
+    width: 100%; 
+    background-image: url(../dub.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    color: black;
+    font-size: 45px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{    
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: 4s;
+}
+.button{
+    background-color: #f9004d;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: transform .4s;
+}
+.button:hover{
+    transform: scale(1.2)
+}
+.register{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem; 
+}
+.register-form h2{
+    font-size: 40px;
+    color: black;
+     margin-bottom: 20px;
+}
+.register-form form{
+    position: relative;
+}
+.register-form form input,
+form textarea{
+    width: 50%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.register-form form .btn{
+    display: inline-block;
+    background: #f9004d;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.register-form form .btn:hover{
+    border: 2px solid #f9004d;
+    background: transparent;
+    transform: scale(0.8);
+}
+.end{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #191919;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

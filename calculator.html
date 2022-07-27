@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!----Calculator 1----->
+    <div class="emperor" id="emperor">
+        <nav>
+            <h2 class="logo">Qurious<span>kat</span>!</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Calculator</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+            <a href="#" class="button">Login</a>
+        </nav>
+
+         <div class="container">
+             <form name="cal">
+                 <input type="text" name="display" id="display" placeholder="0" readonly>
+                 <br>
+                 <div class="button-box">
+                     <input type="button" class="btn" value="7" onclick="cal.display.value +='7'">
+                     <input type="button" class="btn" value="8" onclick="cal.display.value +='8'">
+                     <input type="button" class="btn" value="9" onclick="cal.display.value +='9'">
+                     <input type="button" class="wavy btn" value="*" onclick="cal.display.value +='*'">
+                     <br>
+                     <input type="button" class="btn" value="7" onclick="cal.display.value +='7'">
+                     <input type="button" class="btn" value="8" onclick="cal.display.value +='8'">
+                     <input type="button" class="btn" value="9" onclick="cal.display.value +='9'">
+                     <input type="button" class="wavy btn" value="*" onclick="cal.display.value +='*'">
+                     <br>
+                     <input type="button" class="btn" value="4" onclick="cal.display.value +='4'">
+                     <input type="button" class="btn" value="5" onclick="cal.display.value +='5'">
+                     <input type="button" class="btn" value="6" onclick="cal.display.value +='6'">
+                     <input type="button" class="wavy btn" value="-" onclick="cal.display.value +='-'">
+                     <br>
+                     <input type="button" class="btn" value="1" onclick="cal.display.value +='1'">
+                     <input type="button" class="btn" value="2" onclick="cal.display.value +='2'">
+                     <input type="button" class="btn" value="3" onclick="cal.display.value +='3'">
+                     <input type="button" class="wavy btn" value="+" onclick="cal.display.value +='+'">
+                     <br>
+                     <input type="button" class="swoosh btn" value="C" onclick="cal.display.value =''">
+                     <input type="button" class="btn" value="0" onclick="cal.display.value +='0'">
+                     <input type="button" class="wavy btn" value="/" onclick="cal.display.value +='/'">
+                     <input type="button" class="wavy btn" value="=" onclick="cal.display.value = eval (cal.display.value)">
+                     <br>
+                 </div>
+             </form>
+         </div>
+    </div>
+</body>
+</html>
